@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - crawl",
+            "request": "launch",
+            "mainClass": "org.runxin.crawl.crawl",
+            "projectName": "crwal-jars"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - crawl",
+            "request": "launch",
+            "mainClass": "org.runxin.crawl.crawl",
+            "projectName": "indexer"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - crawl",
+            "request": "launch",
+            "mainClass": "org.apache.maven.indexer.examples.crawl",
+            "projectName": "indexer"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - crawl",
+            "request": "launch",
+            "mainClass": "org.apache.maven.indexer.examples.crawl",
+            "projectName": "indexer-examples-basic"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainProcessor",
+            "request": "launch",
+            "mainClass": "org.apache.maven.indexer.examples.MainProcessor",
+            "projectName": "indexer-examples-basic"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BasicUsageExample",
+            "request": "launch",
+            "mainClass": "org.apache.maven.indexer.examples.BasicUsageExample",
+            "projectName": "indexer-examples-basic"
+        }
+    ]
+}
