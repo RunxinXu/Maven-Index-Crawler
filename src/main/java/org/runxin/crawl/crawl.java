@@ -14,14 +14,6 @@ import com.alibaba.fastjson.JSONWriter;
 
 public class crawl{
 
-    // The crawler will produce the following files
-    // 
-    // - JarsRepo: the jars 
-    // - IndexResult
-    //   - IndexFiles: index zip 
-    //   - IndexData: this is exactly what we want
-    //       - ArtifactUsage.json: the usage information
-    //       - index: the index
     public static void main(String[] args) throws Exception {
         final int usageThreshold = 300;
         try{
