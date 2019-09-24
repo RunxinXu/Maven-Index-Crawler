@@ -8,7 +8,7 @@ First, set up a proper usage threshold (the jar will be crawled only then its us
 ```
 public static void main(String[] args) throws Exception {
         final int usageThreshold = 300;
-		...
+        ...
 }
 ```
 
@@ -17,12 +17,12 @@ Then, run the main function and wait patiently.
 ## Result
 The crawler will produce the following files. The ***IndexData*** directory is exactly what we want.
 
-+---- JarsRepo
-+---- IndexResult
-| &nbsp; &nbsp; &nbsp; &nbsp; +---- IndexFiles
-| &nbsp; &nbsp; &nbsp; &nbsp; +---- **IndexData**
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +---- ArtifactUsage.json
-| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +---- index
++---- JarsRepo <br>
++---- IndexResult <br>
+| &nbsp; &nbsp; &nbsp; &nbsp; +---- IndexFiles <br>
+| &nbsp; &nbsp; &nbsp; &nbsp; +---- **IndexData** <br>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +---- ArtifactUsage.json <br>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +---- index <br>
 
 
 The detail description is as follows:
