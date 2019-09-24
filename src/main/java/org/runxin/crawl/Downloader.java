@@ -13,7 +13,6 @@ import org.eclipse.aether.repository.LocalRepository;
 import org.eclipse.aether.repository.RemoteRepository;
 import org.eclipse.aether.resolution.ArtifactRequest;
 import org.eclipse.aether.resolution.ArtifactResolutionException;
-import org.eclipse.aether.resolution.ArtifactResult;
 import org.eclipse.aether.spi.connector.RepositoryConnectorFactory;
 import org.eclipse.aether.spi.connector.transport.TransporterFactory;
 import org.eclipse.aether.transport.file.FileTransporterFactory;
@@ -53,7 +52,7 @@ public class Downloader {
         ArtifactRequest artifactRequest=new ArtifactRequest();
         artifactRequest.addRepository(central);
         artifactRequest.setArtifact(artifact);
-        ArtifactResult result = repoSystem.resolveArtifact(session, artifactRequest);
+        repoSystem.resolveArtifact(session, artifactRequest);
         System.out.println("Successfully download :" + groupId + ":" + artifactId);
 	}
 }

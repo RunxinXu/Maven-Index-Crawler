@@ -5,6 +5,13 @@
             "name": "CodeLens (Launch) - crawl",
             "request": "launch",
             "mainClass": "org.runxin.crawl.crawl",
+            "projectName": "crawl-jars"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - crawl",
+            "request": "launch",
+            "mainClass": "org.runxin.crawl.crawl",
             "projectName": "crwal-jars"
         },
         {

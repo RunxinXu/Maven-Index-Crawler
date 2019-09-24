@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class MyCrawler extends BreadthCrawler {
 
-    private String downloadPath = "";
+    private String downloadPath;
     public Map<String,Integer> artifactUsage;
     private static Pattern patternG = Pattern.compile("<groupId>(.+)</groupId>");
     private static Pattern patternA = Pattern.compile("<artifactId>(.+)</artifactId>");
@@ -31,7 +31,7 @@ public class MyCrawler extends BreadthCrawler {
         this.addSeedAndReturn("https://mvnrepository.com/tags").type("tagCloudPage");
 
         // Azure 
-        String azureLibraryList[] = {
+        final String azureLibraryList[] = {
             "https://mvnrepository.com/artifact/com.microsoft.azure/adal4j",
             "https://mvnrepository.com/artifact/com.microsoft.azure/azure-mgmt-appservice",
             "https://mvnrepository.com/artifact/com.microsoft.azure/azure-batch",
@@ -96,7 +96,7 @@ public class MyCrawler extends BreadthCrawler {
         };
 
         // Additional popular tags
-        String additionalTags[] = {
+        final String additionalTags[] = {
             "https://mvnrepository.com/tags/android",
             "https://mvnrepository.com/tags/apache",
             "https://mvnrepository.com/tags/api",
@@ -141,7 +141,7 @@ public class MyCrawler extends BreadthCrawler {
 
     @Override
     public void visit(Page page, CrawlDatums next){
-        String url = page.url();
+        final String url = page.url();
         if(page.matchType("versionPage")) {
             //  the latest version
             Elements contents = page.select("body>div#page>div#maincontent>div:not([class])").last().select(
