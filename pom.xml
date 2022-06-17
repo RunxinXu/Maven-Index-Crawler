@@ -17,7 +17,7 @@
     <mavenVersion>3.3.9</mavenVersion>
     <indexerVersion>6.0.0</indexerVersion>
     <commonsCliVersion>1.4</commonsCliVersion>
-    <fastjsonVersion>1.2.59</fastjsonVersion>
+    <fastjsonVersion>1.2.83</fastjsonVersion>
     <webCollectorVersion>2.73-alpha</webCollectorVersion>
     <commonsCodecVersion>1.13</commonsCodecVersion>
   </properties>
